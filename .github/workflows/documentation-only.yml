@@ -37,14 +37,6 @@ on:
         description: "Design version"
         required: true
         default: "pre-release"
-  push:
-    branches:
-      - main
-    inputs:
-      version:
-        description: "Dev version"
-        required: true
-        default: "dev"
 
 jobs:
   Documentation:
@@ -103,7 +95,7 @@ jobs:
       # Actually run KiBot to generate all the files. The KiBot script used is
       # in the .kibot/release.kibot.yaml folder.
       - name: Generate documentation
-        uses: INTI-CMNB/KiBot@v1
+        uses: INTI-CMNB/KiBot@v2
         with:
           config: .kibot/documentation-only.kibot.yaml
           dir: ${{ env.OutputFolder }}
