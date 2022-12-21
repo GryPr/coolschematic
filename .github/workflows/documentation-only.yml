@@ -40,6 +40,11 @@ on:
   push:
     branches:
       - main
+    inputs:
+      version:
+        description: "Dev version"
+        required: true
+        default: "dev"
 
 jobs:
   Documentation:
