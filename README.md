@@ -1,8 +1,6 @@
 # KiBot CI/CD template repository for KiCad 5
 
 
-123
-
 This repository provides a ready-to-go CI/CD workflow for KiCad 5 with GitHub actions.
 
 ## Features of this repository template
